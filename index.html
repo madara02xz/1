@@ -270,7 +270,7 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
             menuItem.onclick = function(event) {
-                var isParenMenu = this.menuItem.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                var isParenMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
 
                 if (isParenMenu) {
                     event.preventDefault();

@@ -535,6 +535,11 @@ html {
     margin-top: 24px;
 }
 
+.thongtinlienhe a {
+    text-decoration: none;
+    color: black;
+}
+
 .xxxxxxxx {
     margin-top: 200px!important;
 }

@@ -10,6 +10,9 @@
 /* mobile */
 
 @media ( max-width: 740px)and ( min-width: 0px) {
+    .s-mt-32 {
+        margin-top: 32px;
+    }
     .s-col-full,
     .s-submiit-full {
         width: 100%;
@@ -56,6 +59,26 @@
         margin-top: 8px;
     }
     #content .name-mem {
+        margin-top: 16px;
+    }
+}
+
+@media ( max-width: 1024px) {
+    .btn {
+        padding: 16px 16px;
+        font-weight: 600;
+    }
+    #nav .subnav a {
+        padding: 4px 12px;
+    }
+    .contact-content .thongtinlienhe {
+        line-height: 2;
+    }
+    .footer-location {
+        font-size: 32px;
+    }
+    .text-footer a {
+        padding: 8px 0;
         margin-top: 16px;
     }
 }

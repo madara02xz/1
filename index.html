@@ -36,7 +36,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">More
+                <li><a href="#"> More
                 <i class=" iconmore ti-check"></i>
             </a>
                     <ul class="subnav">
@@ -270,9 +270,9 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
             menuItem.onclick = function(event) {
-                var isParenMenu = this.menuItem.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
 
-                if (isParenMenu) {
+                if (isParentMenu) {
                     event.preventDefault();
 
                 } else {

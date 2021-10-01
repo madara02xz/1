@@ -190,7 +190,7 @@ html {
 #leader {}
 
 #leader {
-    background: url(/asscets/rose.jpg)top center / cover no-repeat;
+    background: url(../img/slider/chicago.jpg)top center / cover no-repeat;
     margin-top: 46.3px;
     padding-top: 50%;
     position: relative;
@@ -214,6 +214,7 @@ html {
 #leader .text2 {
     margin-top: 5px;
     font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {}

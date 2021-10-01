@@ -33,6 +33,7 @@ html {
     padding: 12px 16px;
     display: inline-block;
     border: none;
+    -webkit-appearance: none;
 }
 
 .row {

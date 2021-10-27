@@ -1,0 +1,544 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.btn {
+  margin-top: 4px;
+  transition: all 0.25s linear;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  padding: 12px 16px;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row-mt8 {
+  margin-top: 8px !important;
+}
+
+.row-mt16 {
+  margin-top: 16px !important;
+}
+
+.col {
+  padding-left: 8px;
+  float: left;
+  padding-right: 8px;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-three {
+  width: 33.3333%;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white !important;
+  /* color của phần text-selection 2 */
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  display: block;
+  /* color : white; */
+  padding: 0 24px;
+  line-height: 46px;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+  line-height: 38.4px;
+}
+
+#nav .subnav {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav > li:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav .iconmore {
+  font-size: 14px;
+  color: white;
+}
+
+.mobile-menu-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.mobile-menu-btn {
+  cursor: pointer;
+  float: right;
+  padding: 0 19px;
+  color: white;
+  font-size: 20px;
+  line-height: 46px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header .thanhnav {
+  cursor: pointer;
+  float: right;
+  padding: 0 19px;
+  color: white;
+}
+
+.thanhnav {
+  line-height: 46px;
+}
+
+.thanhnav .ytb,
+.thanhnav .fb {
+  padding: 15px;
+  display: inline-block;
+}
+
+.thanhnav .ytb:hover,
+.thanhnav .fb:hover {
+  background-color: red;
+}
+
+#leader {
+  background: url(../img/slider/chicago.jpg) top center/cover no-repeat;
+  margin-top: 46.3px;
+  padding-top: 50%;
+  position: relative;
+}
+
+#leader .text-content {
+  color: white;
+  bottom: 100px;
+  position: absolute;
+  /*2 cách căn giữa */
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+#leader .text1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#leader .text2 {
+  margin-top: 5px;
+  font-size: 15px;
+  text-shadow: 0 0 1px #000;
+}
+
+#content .selection-content {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0 112px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#content .text-content {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#content .subtext-content {
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-size: 16px;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .band {
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#content .profile-list {
+  overflow: hidden;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+#content .profile-mem {
+  float: left;
+}
+
+#content .name-mem {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+#content .img-mem {
+  border-radius: 5px;
+  width: 154px;
+  margin-bottom: 16px;
+}
+
+.selection-2 {
+  background-color: black;
+}
+
+.listve {
+  margin-top: 32px;
+  background-color: #fff;
+}
+
+.time-buy-sticket {
+  color: #757575;
+  list-style-type: none;
+  padding: 10.5px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sold-out {
+  font-size: 15px;
+  color: white;
+  background-color: red;
+  padding: 3px 7px;
+  margin-left: 12px;
+}
+
+.classso3 {
+  font-size: 15px;
+  float: right;
+  color: #fff;
+  border-radius: 50%;
+  background-color: black;
+  padding: 4px 11px;
+  margin-top: -3px;
+}
+
+.list-plance {
+  padding-top: 32px;
+  overflow: hidden;
+}
+
+/* .list-plance::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+.body-text-plance {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.img-plance {
+  display: block;
+  width: 100%;
+}
+
+.img-plance:hover {
+  opacity: 0.6;
+}
+
+.time-plance,
+.text-demo-plance {
+  padding: 15px 0;
+}
+
+.dia-chi {
+  font-weight: 600;
+}
+
+.time-plance {
+  opacity: 0.6;
+}
+
+.text-demo-plance {
+  line-height: 1.4;
+}
+
+.btn:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-content .thongtinlienhe {
+  font-size: 18px;
+  color: black;
+  line-height: 1.5;
+}
+
+.contact-content .thongtinlienhe i {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-content .form-control:active {
+  border: 2px solid black;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 14px;
+  outline: none;
+}
+
+.contact-content .control-submit:hover {
+  background-color: #ccc;
+}
+
+.control-submit {
+  float: right;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(144, 137, 137, 0.4);
+  /* rgba(0,0,0,0.4); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal-header {
+  background-color: #009688 !important;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-header .modal-bag {
+  margin-right: 16px;
+}
+
+.modal-close:hover {
+  opacity: 0.7;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  animation: modalFacein ease 0.8s;
+}
+
+.modal-label {
+  display: block;
+  font-size: 15px;
+}
+
+.modal-input {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 24px;
+  margin-top: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+#buy-tickets:hover,
+.modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#buy-tickets {
+  width: 100%;
+  font-size: 15px;
+  background-color: #009688;
+  border: none;
+  text-transform: uppercase;
+  padding: 16px;
+  color: white;
+}
+
+.bodal-footer .modal-help {
+  float: right;
+  margin-bottom: 32px;
+  margin-top: 12px;
+  margin-right: 16px;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+/*  */
+@keyframes modalFacein {
+  from {
+    opacity: 0.5;
+    transform: translateY(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#footer {
+  margin: 72px 0;
+  text-align: center;
+}
+
+.img-footer {
+  width: 100%;
+}
+
+.footer-location a:hover,
+.text-footer:hover {
+  opacity: 0.5;
+}
+
+.footer-location a,
+.text-footer {
+  text-decoration: none;
+  color: #757575;
+  text-align: center;
+}
+
+.footer-location {
+  font-size: 24px;
+  margin-bottom: 24px;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.text-footer {
+  font-size: 15px;
+  margin-top: 24px;
+}
+
+.thongtinlienhe a {
+  text-decoration: none;
+  color: black;
+}
+
+.xxxxxxxx {
+  margin-top: 200px !important;
+}
+
+.demo {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

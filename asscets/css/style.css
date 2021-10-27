@@ -27,6 +27,7 @@ html {
 
 .btn {
     margin-top: 4px;
+    transition: all 0.25s linear;
     text-decoration: none;
     color: #fff;
     background-color: black;
